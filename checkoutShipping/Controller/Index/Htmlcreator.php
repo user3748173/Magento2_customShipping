@@ -6,7 +6,7 @@ class Htmlcreator extends \Magento\Framework\App\Action\Action{
 
     public function __construct( 
         \Vendor\checkoutShipping\Model\getCarrierForHtml $getCarrierForHtml,
-        \Magento\Framework\Model\Context $context, 
+        \Magento\Framework\App\Action\Context $context, 
         \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory) {
         $this->resultJsonFactory = $resultJsonFactory;
         parent::__construct($context);
