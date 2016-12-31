@@ -1,6 +1,6 @@
 <?php
 namespace Vendor\checkoutShipping\Block\Adminhtml\Config\Buttons;
-class Htmlcreator extends \Magento\Config\Block\System\Config\Form\Field{
+class runModuleHelper extends \Magento\Config\Block\System\Config\Form\Field{
    protected $_buttonLabel = 'Helper';
    
    public function setButtonLabel($buttonLabel){
