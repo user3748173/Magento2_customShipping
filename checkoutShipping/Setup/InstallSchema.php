@@ -49,7 +49,8 @@ class InstallSchema implements InstallSchemaInterface {
                     ->newTable($shippingHtmlName)
                     ->addColumn('template_id', Table::TYPE_INTEGER, null, ['identity' => true, 'unsigned' => true, 'nullable' => false, 'primary' => true], 'Primary Key')
                     ->addColumn('html_id_name', Table::TYPE_TEXT, 100, ['nullable' => false, 'default' => ''], 'html id')
-                    ->addColumn('shipping_html', Table::TYPE_TEXT, '2M', ['nullable' => false, 'default' => ''], 'carrier')
+                    ->addColumn('locations', Table::TYPE_TEXT, '2M', ['nullable' => false, 'default' => ''], 'carrier')
+                    ->addColumn('html_type', Table::TYPE_TEXT, 100, ['nullable' => false, 'default' => ''], 'type')
                     ->setComment('Shipping HTML')
                     ->setOption('type', 'InnoDB')
                     ->setOption('charset', 'utf8');
