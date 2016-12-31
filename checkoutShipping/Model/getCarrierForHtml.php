@@ -17,7 +17,7 @@ class getCarrierForHtml {
                 ->addFieldToFilter('html_id_name', $value);
         $cat_det = $product->getData();
         if ($cat_det) {
-            $cat_det=$cat_det['0']['shipping_html'];
+            $cat_det=$cat_det['0']['html_type'];
             return $cat_det;
         } else {
             return null;
