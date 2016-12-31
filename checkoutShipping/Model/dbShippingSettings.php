@@ -11,7 +11,7 @@ class dbShippingSettings extends \Magento\Framework\Model\AbstractModel {
     }
 
     public function _construct() {
-        $this->_init('Vendor\Omniva\Model\ResourceModel\dbShippingSettings');
+        $this->_init('Vendor\checkoutShipping\Model\ResourceModel\dbShippingSettings');
     }
 
 }
