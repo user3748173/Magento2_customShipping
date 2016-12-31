@@ -7,7 +7,7 @@
         <section id="vendor_block_config" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Customer</label>
             <tab>custom_shipping_block</tab>
-            <resource>Vendor_checkoutShipping::vendor_block_config</resource>
+            <resource>Vendor_CheckoutShipping::vendor_block_config</resource>
             <group id="general" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Config</label>
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
