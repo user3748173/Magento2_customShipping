@@ -12,6 +12,37 @@ class InstallSchema implements InstallSchemaInterface {
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context) {
         $installer = $setup;
         $installer->startSetup();
+        
+        $installer->getConnection()->addColumn(
+            $installer->getTable('quote'),
+            'custom_carrier',
+            [
+                'type' => 'text',
+                'nullable' => false,
+                'comment' => 'Address or post',
+            ]
+        );
+
+        $installer->getConnection()->addColumn(
+            $installer->getTable('sales_order'),
+            'custom_carrier',
+            [
+                'type' => 'text',
+                'nullable' => false,
+                'comment' => 'Address or post',
+            ]
+        );
+
+        $installer->getConnection()->addColumn(
+            $installer->getTable('sales_order_grid'),
+            'custom_carrier',
+            [
+                'type' => 'text',
+                'nullable' => false,
+                'comment' => 'Address or post',
+            ]
+        );
+        
         $shippingHtmlName = $installer->getTable('custom_shipping_settings');
         if ($installer->getConnection()->isTableExists($shippingHtmlName) != true) {
             $shippingHtmlTable = $installer->getConnection()
