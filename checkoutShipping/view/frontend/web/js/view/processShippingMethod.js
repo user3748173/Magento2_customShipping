@@ -31,16 +31,6 @@ define(['jquery', 'Magento_Search/form-mini'], function ($) {
         if (html == "array") {
             $(".postOffice").not(".red").hide();
             $(".red").show();
-            var availableTags = [
-                "ActionScript",
-                "AppleScript",
-                "Asp"
-            ];
-            $("#tags").click(function () {
-                $(".inputPostOffices").autocomplete({
-                    source: availableTags
-                });
-            });
         } else if (html == "input") {
             $(".postOffice").not(".green").hide();
             $(".green").show();
