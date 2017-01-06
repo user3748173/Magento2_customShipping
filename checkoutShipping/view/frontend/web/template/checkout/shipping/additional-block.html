@@ -1,21 +1,17 @@
 
 <div data-bind="visible: canVisibleBlock ">
-    <div data-role="collapsible">
-        <div data-role="title">POSTOFFICES</div>
-        <div data-role="content" style="display:none" class="postOffice red">
-            </br>
-            <label for="tags">Tags: </label>
-            <input id="tags" class="inputPostOffices">
-
+    <div>
+        <div >POSTOFFICES</div>
+        <div style="display:none" class="postOffice red">
+            <label>Tags: </label>
+            <input id="tags1" class="inputPostOffices" data-bind="afterRender: setSearchElement"> 
         </div>
     </div>
-    <div data-role="collapsible">
-        <div data-role="title">ADDRESSES</div>
-        <div data-role="content" style="display:none" class="postOffice green">
-            </br>
-            <label for="tags">Tags: </label>
-            <input id="tags">
-
+    <div>
+        <div>ADDRESSES</div>
+        <div style="display:none" class="postOffice green">
+            <label>Tags: </label>
+            <input id="tags2">
         </div>
     </div>
 </div>
